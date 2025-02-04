@@ -1,5 +1,5 @@
 :root {
-  --primary: #832dc1;
+  --primary: #8039b3;
   --primary-dark: #6911b6;
   --background: #1a1a1a;
   --surface: #242424;
@@ -197,14 +197,17 @@ h2 {
   gap: 20px;
 }
 
+/* Skills Section */
 .skill-box {
   background-color: var(--surface);
-  width: 500px;
   padding: 1.5rem;
   border-radius: 10px;
   transition: var(--transition);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Make it responsive */
+  min-width: 250px; /* Ensure it doesn’t shrink too much */
 }
+
 
 .skill-box:hover {
   transform: translateY(-3px);
