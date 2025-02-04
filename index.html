@@ -6,6 +6,7 @@
     <title>Abisheak Sabari | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
       <style>
     .highlightname {
       background: linear-gradient(40deg, rgb(102, 22, 159), #f3ec78, #af4261);
@@ -24,6 +25,16 @@
       color: transparent;
     }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let parallaxWrapper = document.querySelector(".parallax-wrapper .container");
+  
+      window.addEventListener("scroll", function () {
+        let scrollPosition = window.scrollY;
+        parallaxWrapper.style.transform = "translateY(" + scrollPosition * 0.2 + "px)";
+      });
+    });
+  </script>
 </head>
 <body>
     <nav class="navbar">
@@ -76,52 +87,49 @@
     </section>
 
     <section id="skills" class="section">
-        <div class="container">
-          <div class="section-header">
-            <i class="fas fa-code"></i>
-            <h2>Skills</h2>
-            <p>A comprehensive overview of my technical expertise and proficiency.</p>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-code"></i> Software Skills</h3>
-            <div class="skill-boxes">
-              <div class="skill-box">
-                <h4>Python</h4>
-                <p>Experienced with working on real time projects</p>
-              </div>
-              <div class="skill-box">
-                <h4>C Programming</h4>
-                <p>Experienced with working on real time projects</p>
-              </div>
-              <div class="skill-box">
-                <h4>Data Analytics</h4>
-                <p>Experienced with working on real time projects</p>
-              </div>
-              <div class="skill-box">
-                <h4>Data Visualisation</h4>
-                <p>Experienced with working on real time projects</p>
-              </div>
-              <div class="skill-box">
-                <h4>Pandas Data Frame</h4>
-                <p>PExperienced with working on real time projects</p>
-              </div>
-              <div class="skill-box">
-                <h4>Numpy</h4>
-                <p>Experienced with working on real time projects</p>
-              </div>
-              <div class="skill-box">
-                <h4>Tableau</h4>
-                <p>Intermediate</p>
-              </div>
-              <div class="skill-box">
-                <h4>SQL</h4>
-                <p>Intermediate</p>
-              </div>
+                    <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-code"></i>
+                    <h2>Skills</h2>
+                    <p>A comprehensive overview of my technical expertise and proficiency.</p>
+                </div>
+                <div class="skill-boxes">
+                    <div class="skill-box">
+                        <h4>Python</h4>
+                        <p>Experienced with working on real time projects</p>
+                    </div>
+                    <div class="skill-box">
+                        <h4>C programming</h4>
+                        <p>Experienced with working on real time projects</p>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Data Analytics</h4>
+                        <p>Experienced with working on real time projects</p>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Data Visualisation</h4>
+                        <p>Experienced with working on real time projects</p>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Pandas DataFrame</h4>
+                        <p>Experienced with working on real time projects</p>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Numpy</h4>
+                        <p>Experienced with working on real time projects</p>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Tableau</h4>
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="skill-box">
+                        <h4>SQL</h4>
+                        <p>Intermediate</p>
+                    </div>
             </div>
-          </div>
         </div>
-      </section>
-      
+    </div>
+    </section>
 
     <section id="projects" class="section">
         <div class="container">
@@ -248,5 +256,17 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let parallaxWrapper = document.querySelector(".parallax-wrapper .container");
+        
+            if (parallaxWrapper) {
+                window.addEventListener("scroll", function () {
+                    let scrollPosition = window.scrollY;
+                    parallaxWrapper.style.transform = "translateY(" + scrollPosition * 0.2 + "px)";
+                });
+            }
+        });
+    </script>
 </body>
 </html>
